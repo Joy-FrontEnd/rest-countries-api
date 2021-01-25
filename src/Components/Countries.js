@@ -3,12 +3,11 @@ const apiUrl = "https://restcountries.eu/rest/v2/all"
 
 const Countries = () => {
   const [countries, setCountries] = useState([])
-
   const fetchCountryData = async () => {
-      const response = await fetch(apiUrl)
-      const countries = await response.json()
-      setCountries(countries)
-      console.log(countries)  }
+  const response = await fetch(apiUrl)
+  const countries = await response.json()
+  setCountries(countries)
+  console.log(countries)  }
 
 
   useEffect(() => {
