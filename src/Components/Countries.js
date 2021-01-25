@@ -25,12 +25,14 @@ const Countries = () => {
       return <article key={numericCode}>
         <div>
           <img src={flag} alt={name} />
-          <h3>{name}</h3>
+        <div className="country-details"> 
+            <h3>{name}</h3>
           <ul>
             <li>Population: <span>{population}</span></li>
             <li>Capital: <span>{capital}</span></li>
             <li>Region: <span>{region}</span></li>
           </ul>
+        </div>
         </div>
       </article>
     })}
